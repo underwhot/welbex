@@ -3805,6 +3805,7 @@ body::after {
 }
 
 .tabs-letters__img-wrapper {
+  cursor: pointer;
   padding: 1.875rem;
   background: rgba(14, 16, 20, 0.6);
   border: 1px solid #25262c;
@@ -6916,7 +6917,7 @@ body::after {
     opacity: 0.5;
   }
 
-  .tabs-letters__title:hover .tabs-letters__img-wrapper img {
+  .tabs-letters__img-wrapper:hover .tabs-letters__image-ibg img {
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
   }
@@ -6926,9 +6927,16 @@ body::after {
   }
 
   .card-blog iframe {
+    -webkit-filter: brightness(0.5);
+            filter: brightness(0.5);
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+  }
+
+  .card-blog iframe:hover {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
   }
 }
 
